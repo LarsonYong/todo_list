@@ -17,7 +17,11 @@ const mapDispatchToProps = (dispatch) => {
     //you can now say this.props.mappedAppActions
     fetchTodos: () => dispatch(todoActions.fetchTodos()),
     mappedDeleteTodo: todoToDelete => dispatch(todoActions.deleteTodo(todoToDelete)),
-    mappedEditTodo: todoToEdit => dispatch(todoActions.editTodo(todoToEdit))
+    mappedEditTodo: todoToEdit => dispatch(todoActions.editTodo(todoToEdit)),
+    mappedshowEditModal: todoToEdit => dispatch(todoActions.showEditModal(todoToEdit)),
+    mappedhideEditModal: () => dispatch(todoActions.hideEditModal()),
+    mappedshowDeleteModal: todoToDelete => dispatch(todoActions.showDeleteModal(todoToDelete)),
+    mappedhideDeleteModal: () => dispatch(todoActions.hideDeleteModal())
   }
 }
 
