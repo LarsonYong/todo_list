@@ -1,5 +1,5 @@
 // ./react-redux-client/src/actions/todoActions.js
-const apiUrl = "http://localhost:3001/api";
+const apiUrl = "http://localhost:3001/api/";
 
 export const toggleAddBook = () => {
   return {
@@ -9,6 +9,7 @@ export const toggleAddBook = () => {
 export const addNewTodo = (todo) => {console.log(todo)
   return (dispatch) => {
     dispatch(addNewTodoRequest(todo));
+    console.log(todo);
     return fetch(apiUrl, {
       method:'post',
     //  headers: { 'Content-Type': 'application/x-www-form-urlencoded' },

@@ -27,6 +27,8 @@ addTodo(e){
         data.append('todoText', form.todoText.value);
         data.append('todoDesc', form.todoDesc.value);
         this.props.mappedAddTodo(data);
+        console.log(form.todoText.value);
+        console.log(form.todoDesc.value);
       }
       else{
         return ;

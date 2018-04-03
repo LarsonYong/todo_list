@@ -41,13 +41,7 @@ submitEditTodo(e){
     }
 }
 
-hideDeleteModal(){
-    //this.props.mappedhideDeleteModal();
-  }
 
-showDeleteModal(todoToDelete){
-//this.props.mappedshowDeleteModal(todoToDelete);
-  }
 
 hideDeleteModal(){
     this.props.mappedhideDeleteModal();
